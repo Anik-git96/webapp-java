@@ -10,6 +10,7 @@ pipeline{
             
             stage ('build package'){
                 steps{
+                    dir ('cd /var/lib/jenkins/workspace/java\ web-app/webapp')
                     sh 'mvn clean package'
                 }
             }
